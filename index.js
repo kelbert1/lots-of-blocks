@@ -4,7 +4,7 @@
  * @author: Jones Murphy
  */
 var express = require('express');
-var ejs = requre('ejs');
+var ejs = require('ejs');
 
 var app = express();
 var CURR_DIR = __dirname;
