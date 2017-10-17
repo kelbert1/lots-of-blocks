@@ -34,7 +34,7 @@ app.get('/', function(req, res) {
 });
 
 // Node App Port
-var port = 8080;
+var port = 443;
 
 createServer(port);
 
