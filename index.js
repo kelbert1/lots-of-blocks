@@ -4,6 +4,7 @@
  * @author: Jones Murphy
  */
 var express = require('express');
+var path = require('path');
 var ejs = require('ejs');
 
 var app = express();
