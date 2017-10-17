@@ -28,9 +28,11 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.get('/', req, res) {
+//Route to home page
+app.get('/', function(req, res) {
     res.render(index);
-}
+});
+
 // Node App Port
 var port = 8080;
 
