@@ -5,7 +5,7 @@ http.createServer(function(req, res) {
     var url = req.url;
     switch(url) {
         case '/style.css':
-            getStaticFileContent(res, 'style.css', 'text/css');
+            getStaticFileContent(res, './css/style.css', 'text/css');
             break;
         case '/':
             getStaticFileContent(res, './public/index.htm', 'text/html');
