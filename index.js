@@ -5,7 +5,7 @@ http.createServer(function(req, res) {
     var url = req.url;
     switch(url) {
         case '/':
-            getStaticFileContent(res, './public/index.html', 'text/html');
+            getStaticFileContent(res, './public/index.htm', 'text/html');
             break;
         case '/about':
             // TODO
@@ -21,8 +21,6 @@ http.createServer(function(req, res) {
 
 function getStaticFileContent(res, filePath, contentType) {
     fs.readFile(filePath, function(error, data) {
-        console.log(data);
-        console.log(error);
         if (error) {
             res.writeHead(500, {'Content-Type':'text/plain'});
             res.end('500 - Internal Server Error');
