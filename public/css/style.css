@@ -1,11 +1,28 @@
-<style>
-    p {
-      font-family: Lucida Grande;
-    }
-	
 body {
-    background-image: url("");
-    background-repeat: no-repeat;
-}	
-  </style>
-  
+    font-family: "Lucida Sans";
+    background-image: url("https://blenderartists.org/forum/attachment.php?attachmentid=244482&d=1372986343");
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+li {
+	float: left;
+}
+li a {
+    display: block;
+    padding: 14px 16px;
+    color: limegreen;
+	text-align: center;
+	text-decoration: none;
+	}
+li a:hover {background-color: #111}
+
+	
+p, h1, h2 {
+    text-align: center;
+}
