@@ -16,16 +16,17 @@ li {
 li a {
     display: block;
     padding: 14px 16px;
-    color: limegreen;
+    color: #383;
 	text-align: center;
 	text-decoration: none;
 	}
 li a:hover {background-color: #111}
 
 #banner {
+	text-shadow: 2px 3px #383;
 	border: 3px solid black;
 	border-radius: 15px
-	text-shadow: 2px 3px limegreen;
+	
 }
 	
 p, h1, h2 {
