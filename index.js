@@ -17,7 +17,7 @@ http.createServer(function(req, res) {
             res.writeHead(404, {'Content-Type':'text/plain'});
             res.end('404 - Page Not Found');
     }
-}).listen(8080);
+}).listen(80);
 
 function getStaticFileContent(res, filePath, contentType) {
     fs.readFile(filePath, function(error, data) {
