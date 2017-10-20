@@ -19,7 +19,7 @@ http.createServer(function(req, res) {
             // TODO
             break;
         case '/wildernessmusic':
-            getStaticContent(res, './music/wildernessmusic.mp3', 'audio/mpeg');
+            getStaticContent(res, './music/wildernessplaylist.mp3', 'audio/mpeg');
             break;
         default:
             res.writeHead(404, {'Content-Type':'text/plain'});
