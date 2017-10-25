@@ -6,20 +6,21 @@ http.createServer(function(req, res) {
     switch(url) {
         case '/style.css':
             getStaticFileContent(res, './public/css/style.css', 'text/css');
-            console.log(res);
+            break;
+        case '/builds':
+            getStaticFileContent(res, './public/builds.html', 'text/html');
+            break;
+        case '/wildernessmusic':
+            getStaticFileContent(res, './music/wildernessplaylist.mp3', 'audio/mpeg');
             break;
         case '/':
-            getStaticFileContent(res, './public/index.htm', 'text/html');
-            console.log(res);
+            getStaticFileContent(res, './public/index.html', 'text/html');
             break;
         case '/about':
             // TODO
             break;
         case '/status':
             // TODO
-            break;
-        case '/wildernessmusic':
-            getStaticContent(res, './music/wildernessplaylist.mp3', 'audio/mpeg');
             break;
         default:
             res.writeHead(404, {'Content-Type':'text/plain'});
@@ -30,6 +31,7 @@ http.createServer(function(req, res) {
 function getStaticFileContent(res, filePath, contentType) {
     fs.readFile(filePath, function(error, data) {
         if (error) {
+            console.log(error);
             res.writeHead(500, {'Content-Type':'text/plain'});
             res.end('500 - Internal Server Error');
         }

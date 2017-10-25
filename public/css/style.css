@@ -1,4 +1,4 @@
-body {
+	body {
     font-family: "Lucida Sans";
     background-image: url("https://blenderartists.org/forum/attachment.php?attachmentid=244482&d=1372986343");
 }
@@ -9,24 +9,26 @@ ul {
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
-}
+	position: fixed;
+	width: 99%;}
 li {
 	float: left;
 }
-li a {
+.navigation bar {
     display: block;
     padding: 14px 16px;
     color: #383;
 	text-align: center;
 	text-decoration: none;
+	
 	}
 li a:hover {background-color: #111}
 
 #banner {
 	text-shadow: 2px 3px #383;
 	border: 3px solid black;
-	border-radius: 15px
-	
+	border-radius: 15px;
+	position: relative;
 }
 	
 p, h1, h2 {
