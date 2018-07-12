@@ -4,11 +4,11 @@
   "description": "Lots of Blocks web server",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.16.0",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
-    "path": "^0.12.7",
-    "body-parser": "^1.16.0",
-    "mysql": "^2.13.0"
+    "mysql": "^2.15.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
