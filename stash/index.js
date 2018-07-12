@@ -22,6 +22,12 @@ http.createServer(function(req, res) {
         case '/status':
             // TODO
             break;
+        case '/login':
+            // getStaticFileContent(res, './public/registration/login.php', 'text/html');
+            break;
+        case '/register':
+            // getStaticFileContent(res, './public/registration/register.php', 'text/html');
+            break;
         default:
             res.writeHead(404, {'Content-Type':'text/plain'});
             res.end('404 - Page Not Found');
